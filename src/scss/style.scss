@@ -1,0 +1,17 @@
+//// Vendor contains all 3rd-party styles
+//@import 'vendor/__vendor';
+
+// Base contains the base styles and colors
+@import 'base/__base';
+
+// Global components like nav and footer
+@import 'components-global/__components-global';
+
+//// Components for the home page
+@import 'components-home/__components-home';
+//
+//// Components for the news page
+//@import 'components-news/__components-news';
+//
+//// Components for the internal page
+//@import 'components-internal/__components-internal';

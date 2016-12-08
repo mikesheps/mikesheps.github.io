@@ -1,0 +1,57 @@
+.header {
+
+  &__layer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 1rem;
+
+  }
+
+  &__left {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+
+  }
+
+  &__home {
+    font-family: $fira;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 1.5rem;
+  }
+
+  &__description {
+    color: $grey;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0 1.5rem;
+  }
+
+  &__right {
+    align-items: center;
+    display: flex;
+    padding: 0 1.5rem;
+    text-align: center;
+    width: 40%;
+  }
+
+  &__port {
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  &__resume {
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  &__contact {
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}

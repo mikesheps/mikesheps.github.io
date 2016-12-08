@@ -1,0 +1,15 @@
+.feature {
+
+  &__layer {
+    align-items: center;
+    background-image: url(../img/cards-game.jpg);
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    justify-content: center;
+  }
+}

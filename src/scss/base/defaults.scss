@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  //font-size: 15px;
+  // This should be the base font-size
+  // for all paragraph text
+  // ! do not base it off of the font-size for the utility nav
+  font-size: 20px;
+}
+
+body {
+  line-height: 1.5;
+}
+
+//Resets
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: $fira;
+
+  // this is not needed
+  //width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: $red;
+}
