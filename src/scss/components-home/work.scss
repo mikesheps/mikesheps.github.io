@@ -1,0 +1,72 @@
+.work {
+
+  &__layer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    width: 50%;
+  }
+
+  &__subheading {
+    color: $darkgrey;
+    padding-top: 2rem;
+  }
+
+  &__item {
+    height: 350px;
+    padding: 1rem 0;
+  }
+
+  &__browserbar {
+    background-color: $greybrow;
+    display: flex;
+    padding: .25rem .25rem;
+  }
+
+  &__red {
+    background-color: $redbrow;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+  }
+
+  &__yellow {
+    background-color: $yellowbrow;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 .2rem;
+    width: 10px;
+  }
+
+  &__green {
+    background-color: $greenbrow;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+  }
+
+  &__project1 {
+    background-image: url(../img/busch.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 310px;
+  }
+
+  &__link {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__project2 {
+    background-image: url(../img/arch.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 310px;
+  }
+}
