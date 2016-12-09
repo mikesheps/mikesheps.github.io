@@ -41,7 +41,7 @@ gulp.task('img', function() {
 });
 
 
-gulp.task('browserSync', ['pug', 'sass', 'js'], function() {
+gulp.task('browserSync', ['pug', 'sass', 'js', 'img'], function() {
   browserSync.init({
     port: 4444,
     browser: 'google chrome canary',

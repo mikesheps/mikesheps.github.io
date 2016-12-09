@@ -3,13 +3,29 @@
   &__layer {
     align-items: center;
     background-image: url(../img/cards-game.jpg);
-    background-blend-mode: overlay;
+    background-color: $red;
+    background-blend-mode: multiply;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 560px;
+    height: 500px;
     justify-content: center;
+  }
+
+  &__banner {
+    text-align: center;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 3rem;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 400;
   }
 }
