@@ -20,6 +20,11 @@
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0 1.5rem;
+
+    &:hover {
+        background-color: $red;
+        color: $grey;
+      }
   }
 
   &__description {
@@ -41,17 +46,32 @@
     flex: 1;
     font-size: 1.4rem;
     font-weight: 300;
+
+    &:hover {
+        background-color: $red;
+        color: $grey;
+      }
   }
 
   &__resume {
     flex: 1;
     font-size: 1.4rem;
     font-weight: 300;
+
+    &:hover {
+        background-color: $red;
+        color: $grey;
+      }
   }
 
   &__contact {
     flex: 1;
     font-size: 1.4rem;
     font-weight: 300;
+
+    &:hover {
+        background-color: $red;
+        color: $grey;
+      }
   }
 }
