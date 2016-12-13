@@ -1,7 +1,7 @@
 .header__layer
   .header__branding
-    a(href="#{header.branding.url}" class="header__home")=header.branding.head
+    a(href=`${header.branding.url}` class="header__home")=header.branding.head
     h3(class="header__description")=header.branding.title
   .header__nav
     each item in header.nav
-      a(href="#{item.url}" class="header__link")=item.text
+      a(href=`${item.url}` class="header__link")=item.text
