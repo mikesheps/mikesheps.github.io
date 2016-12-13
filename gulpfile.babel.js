@@ -49,7 +49,7 @@ gulp.task('browserSync', ['pug', 'sass', 'js', 'img'], function() {
     server: './dist',
   });
   gulp.watch('src/scss/**/*.scss', ['sass']);
-  gulp.watch('src/pug/*.pug', ['pug']);
+  gulp.watch('src/pug/**/*.pug', ['pug']);
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch('dist/*').on('change', browserSync.reload);
 });
