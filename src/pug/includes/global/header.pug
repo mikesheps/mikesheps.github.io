@@ -1,8 +1,8 @@
 .header__layer
   .header__left
-    a(href="#" class="header__home") MICHAEL SHEPARD
-    h3(class="header__description") STL WEB DEVELOPER
+    a(href="#{header.url}" class="header__home")=header.head
+    h3(class="header__description")=header.title
   .header__right
-    a(href="#" class="header__port") Portfolio
-    a(href="#"  class="header__resume") Resume
-    a(href="#" class="header__contact") Contact
+    a(href="#{header.url}" class="header__port")=header.butt
+    a(href="#{header.url}"  class="header__resume")=header.butt
+    a(href="#{header.url}" class="header__contact")=header.butt
