@@ -1,22 +1,24 @@
 export default {
   header: {
-    left: [
+    branding: {
+      head: "MICHAEL SHEPARD",
+      url: "/index.html",
+      title: "STL WEB DEVELOPER",
+    },
+    nav: [
       {
-        head: "MICHAEL SHEPARD",
-        url: "/index.html",
-        title: "STL WEB DEVELOPER",
-      },
-    ]
-    right: [
-      {
-        butt: "Portfolio",
+        text: "Portfolio",
         url: "/portfolio.html",
-        butt: "Resume",
+      },
+      {
+        text: "Resume",
         url: "/resume.html",
-        butt: "Contact",
+      },
+      {
+        text: "Contact",
         url: "/contact.html",
       },
-    ]
+    ],
 
   }
 }

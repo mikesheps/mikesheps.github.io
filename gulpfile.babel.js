@@ -4,6 +4,7 @@ import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import plumber from 'gulp-plumber';
 import {create} from 'browser-sync';
+import data from './src/pug/data/data';
 const browserSync = create();
 
 gulp.task('log', function() {
@@ -11,12 +12,12 @@ gulp.task('log', function() {
 });
 
 gulp.task('pug', function() {
-  const LOCAL_DATA = {text: 'Hello from Data'};
+  // const LOCAL_DATA = {text: 'Hello from Data'};
   return gulp.src('src/pug/pages/**/*.pug')
     .pipe(plumber())
     .pipe(pug({
       pretty: true,
-      locals: LOCAL_DATA
+      locals: data
     }))
     .pipe(gulp.dest('./dist'));
 });

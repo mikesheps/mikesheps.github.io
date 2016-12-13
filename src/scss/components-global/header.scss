@@ -7,12 +7,10 @@
 
   }
 
-  &__left {
+  &__branding {
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 60%;
-
   }
 
   &__home {
@@ -34,15 +32,14 @@
     padding: 0 1.5rem;
   }
 
-  &__right {
+  &__nav {
     align-items: center;
     display: flex;
     padding: 0 1.5rem;
     text-align: center;
-    width: 40%;
   }
 
-  &__port {
+  &__link {
     flex: 1;
     font-size: 1.4rem;
     font-weight: 300;
@@ -53,25 +50,5 @@
       }
   }
 
-  &__resume {
-    flex: 1;
-    font-size: 1.4rem;
-    font-weight: 300;
 
-    &:hover {
-        background-color: $red;
-        color: $grey;
-      }
-  }
-
-  &__contact {
-    flex: 1;
-    font-size: 1.4rem;
-    font-weight: 300;
-
-    &:hover {
-        background-color: $red;
-        color: $grey;
-      }
-  }
 }
