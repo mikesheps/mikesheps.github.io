@@ -1,6 +1,6 @@
 // Import all data files
 import header from './header';
-
+import footer from './footer';
 
 
 // portfolio page data
@@ -15,4 +15,5 @@ import header from './header';
 // Assign all data objects to one object to export
 export default Object.assign({},
 header,
+footer,
 );
