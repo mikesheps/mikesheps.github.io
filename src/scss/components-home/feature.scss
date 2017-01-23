@@ -2,16 +2,18 @@
 
   &__layer {
     align-items: center;
-    background-image: url(../img/cards-game.jpg);
-    background-color: $red;
+    background-attachment: fixed;
     background-blend-mode: multiply;
+    background-color: $red;
+    background-image: url(../img/cards-game.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 100vh;
     justify-content: center;
+    width: 100vw;
   }
 
   &__banner {
