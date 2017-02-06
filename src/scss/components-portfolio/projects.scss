@@ -1,0 +1,72 @@
+.projects {
+
+  &__layer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    padding: 0 3rem;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-of-type(1) {
+      .projects__image {
+        background-image: url(../img/busch.jpg);
+      }
+    }
+
+    &:nth-of-type(2) {
+      .projects__image {
+        background-image: url(../img/tedDrewes.jpg);
+      }
+    }
+
+    &:nth-of-type(3) {
+      .projects__image {
+        background-image: url(../img/arch.jpg);
+      }
+    }
+
+    &:nth-of-type(4) {
+      .projects__image {
+        background-image: url(../img/cards-game.jpg);
+      }
+    }
+
+  }
+
+
+  &__summary {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+  }
+
+  &__subheading {
+    color: $darkgrey;
+    padding-left: 1rem;
+  }
+
+  &__teaser {
+    padding: 0 1rem;
+  }
+
+  &__image {
+    //background-image: url(../img/busch.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    height: 350px;
+  }
+}
