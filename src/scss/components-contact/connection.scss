@@ -1,0 +1,55 @@
+.connection {
+
+  &__layer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem 0;
+  }
+
+
+
+
+  //&__form {
+  //  display: flex;
+  //  flex-direction: column;
+  //  height: 60vh;
+  //  width: 50vw;
+  //  justify-content: space-around;
+  //
+  //  input, textarea {
+  //    border: none;
+  //    border-radius: 5px;
+  //    box-shadow: inset 0px 2px #666;
+  //    padding: .5rem;
+  //
+  //    &:focus {
+  //      background-color: yellow;
+  //    }
+  //
+  //  }
+  //
+  //  .input-name {
+  //      background-color: $greybrow;
+  //  }
+  //
+  //  .input-email {
+  //      background-color: $greybrow;
+  //  }
+  //
+  //  .input-message {
+  //      background-color: $greybrow;
+  //      height: 40%;
+  //  }
+  //
+  //  .input-submit {
+  //      background-color: $red;
+  //      width: 35%;
+  //  }
+  //
+  //
+  //
+  //}
+
+}

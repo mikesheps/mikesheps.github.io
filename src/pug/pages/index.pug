@@ -7,6 +7,15 @@ block seo
   meta(name='description', content='Michael Shepard | St. Louis Web Developer')
 
 //- Index page specific content only
+block header
+  //- Build the utility and main navs
+  //- include ../includes/global/nav-utility
+  include ../includes/global/header
+
+block header
+  - var page = "index"
+  include ../includes/global/header
+
 block page
   include ../includes/home/feature
   include ../includes/home/work
