@@ -2,6 +2,19 @@
   .header__branding
     a(href=`${header.branding.url}` class="header__home")=header.branding.head
     h3(class="header__description")=header.branding.title
-  .header__nav
-    each item in header.nav
-      a(href=`${item.url}` class="header__link")=item.text
+  if page === "index"
+    .header__nav
+      each item in header.nav
+        a(href=`${item.url}` class=`header__link`)=item.text
+  if page === "portfolio"
+    .header__nav.portfolio
+      each item in header.nav
+        a(href=`${item.url}` class=`header__link ${item.text.toLowerCase()}`)=item.text
+  if page === "resume"
+    .header__nav.resume
+      each item in header.nav
+        a(href=`${item.url}` class=`header__link ${item.text.toLowerCase()}`)=item.text
+  if page === "contact"
+    .header__nav.contact
+      each item in header.nav
+        a(href=`${item.url}` class=`header__link ${item.text.toLowerCase()}`)=item.text

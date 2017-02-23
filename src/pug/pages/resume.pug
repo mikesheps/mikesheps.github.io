@@ -6,6 +6,12 @@ block seo
   title Michael Shepard
   meta(name='description', content='Michael Shepard | St. Louis Web Developer')
 
+block header
+  - var page = "resume"
+  //- Build the utility and main navs
+  //- include ../includes/global/nav-utility
+  include ../includes/global/header
+
 //- Index page specific content only
 block page
   include ../includes/resume/employment

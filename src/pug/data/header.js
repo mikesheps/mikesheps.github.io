@@ -8,15 +8,15 @@ export default {
     nav: [
       {
         text: "Portfolio",
-        url: "/portfolio.html",
+        url: "/portfolio.html"
       },
       {
         text: "Resume",
-        url: "/resume.html",
+        url: "/resume.html"
       },
       {
         text: "Contact",
-        url: "/contact.html",
+        url: "/contact.html"
       },
     ],
 

@@ -1,0 +1,36 @@
+.connection__layer
+  .connection__container
+    //- h2(class="connection__subheading") Contact Form
+    #wufoo-z194rmzl17v6phw
+  //- | Fill out my
+  //- a(href='https://sheps1632.wufoo.com/forms/z194rmzl17v6phw') online form
+  | .
+#wuf-adv(style='font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;')
+  | Online contact and registration forms from
+  a(href='http://www.wufoo.com') Wufoo
+  | .
+script(type='text/javascript').
+  var z194rmzl17v6phw;(function(d, t) {
+  var s = d.createElement(t), options = {
+  'userName':'sheps1632',
+  'formHash':'z194rmzl17v6phw',
+  'autoResize':true,
+  'height':'340',
+  'async':true,
+  'host':'wufoo.com',
+  'header':'show',
+  'ssl':true};
+  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+  s.onload = s.onreadystatechange = function() {
+  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+  try { z194rmzl17v6phw = new WufooForm();z194rmzl17v6phw.initialize(options);z194rmzl17v6phw.display(); } catch (e) {}};
+  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+  })(document, 'script');
+
+
+
+    //- form(class="connection__form")
+    //-   input(class="input-name" type='text', placeholder='Name')
+    //-   input(class="input-email" type='email', placeholder='Email address')
+    //-   textarea(class="input-message" name='message', type='text', placeholder='Message')
+    //-   input(class="input-submit" type='submit', value='Submit')

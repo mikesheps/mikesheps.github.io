@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     padding: 1rem 1rem;
-    border-bottom: 1px solid $darkgrey;
+    border-bottom: 1px solid $grey;
   }
 
   &__branding {
@@ -17,7 +17,7 @@
     font-family: $fira;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: .5rem 1rem;
+    padding: .5rem 1.5rem;
 
     &:hover {
         background-color: $red;
@@ -48,8 +48,22 @@
     &:hover {
         background-color: $red;
         color: $white;
+        opacity: .7;
       }
   }
 
+  &__nav.portfolio .portfolio {
+    background-color: $red;
+    color: $white;
+  }
 
+  &__nav.resume .resume {
+    background-color: $red;
+    color: $white;
+  }
+
+  &__nav.contact .contact {
+    background-color: $red;
+    color: $white;
+  }
 }
