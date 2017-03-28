@@ -5,15 +5,24 @@
     justify-content: space-around;
     padding: 1rem 1rem;
     border-bottom: 1px solid $grey;
+
+    @include media('<=880px') {
+      display: block;
+    }
   }
 
   &__branding {
     align-items: center;
     display: flex;
     justify-content: center;
+
+    @include media('<=1190px') {
+      display: block;
+    }
   }
 
   &__home {
+    border-radius: 5px;
     font-family: $fira;
     font-size: 1.5rem;
     font-weight: 700;
@@ -40,6 +49,7 @@
   }
 
   &__link {
+    border-radius: 5px;
     flex: 1;
     font-size: 1.5rem;
     font-weight: 300;
