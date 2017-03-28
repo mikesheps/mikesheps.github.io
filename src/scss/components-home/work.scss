@@ -14,14 +14,18 @@
 
   &__subheading {
     color: $darkgrey;
+    margin: 0 auto;
     padding-top: 2rem;
+    width: 80%;
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     height: 350px;
-    margin-bottom: 3rem;
-    padding: 1rem 0;
-    align-items: center;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    width: 80%;
   }
 
   &__browserbar {
@@ -75,5 +79,6 @@
     box-shadow: 0px 19px 57px #000000;
     display: flex;
     height: 310px;
+
   }
 }
