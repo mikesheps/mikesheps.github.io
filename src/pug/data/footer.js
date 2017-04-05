@@ -1,5 +1,5 @@
 export default {
   footer: {
-    text: "Micahel Shepard copyright 2016",
+    text: "Michael Shepard © 2017",
   }
 }
