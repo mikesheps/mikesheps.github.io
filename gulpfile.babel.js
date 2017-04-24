@@ -7,9 +7,35 @@ import {create} from 'browser-sync';
 import data from './src/pug/data/data';
 const browserSync = create();
 
+// JS
+import uglify from 'gulp-uglify';
+import pump from 'pump';
+import concat from 'gulp-concat';
+import rename from 'gulp-rename';
+
+// Used to clear out /dist folder when we run gulp
+import del from 'del';
+
+//Send to github pages
+import ghPages from 'gulp-gh-pages';
+
 gulp.task('log', function() {
   console.log('Hello from gulp');
 });
+
+
+gulp.task('js', function() {
+    return gulp.src([
+      'src/js/vendor/modernizr.js',
+      'src/js/vendor/headroom.js',
+      'src/js/scripts.js',
+    ])
+      .pipe(concat('script.min.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest('./dist'));
+});
+
+
 
 gulp.task('pug', function() {
   // const LOCAL_DATA = {text: 'Hello from Data'};
@@ -31,10 +57,10 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('js', function() {
-  return gulp.src('src/js/index.js')
-    .pipe(gulp.dest('./dist'));
-});
+// gulp.task('js', function() {
+//   return gulp.src('src/js/index.js')
+//     .pipe(gulp.dest('./dist'));
+// });
 
 gulp.task('img', function() {
   return gulp.src('src/img/**/*')
@@ -54,4 +80,23 @@ gulp.task('browserSync', ['pug', 'sass', 'js', 'img'], function() {
   gulp.watch('dist/*').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['browserSync']);
+
+// Clearing task
+gulp.task('clean', function () {
+  return del([
+    //'dist/**/*',
+    'dist/*.html',
+    'dist/*.css',
+    'dist/*.js'
+    // we don't want to clean this file though so we negate the pattern
+    //'!dist/img'
+  ]);
+});
+
+// Deploy to github pages
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
+gulp.task('default', ['clean', 'browserSync']);

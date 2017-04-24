@@ -1,0 +1,60 @@
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+// .headroom {
+// 	transition: transform 0.25s ease-in-out;
+// 	will-change: transform;
+// }
+//
+// .headroom--pinned {
+// 	transform: translateY(0);
+// }
+//
+// .headroom--unpinned {
+// 	transform: translateY(-100%);
+// }
+//
+// .header--fixed {
+// 	position: fixed;
+// 	z-index: 10;
+// 	right: 0;
+// 	left: 0;
+// 	top: 0;
+// }
+
+.animated {
+	display: none;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	will-change: transform, opacity;
+}
+
+.animated.slideDown {
+	animation-name: slideDown;
+}
+
+.animated.slideUp {
+	animation-name: slideUp;
+}
+
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}

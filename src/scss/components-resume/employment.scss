@@ -1,7 +1,11 @@
 .employment {
 
   &__layer {
+    padding-top: 5rem;
 
+    @include media('<=tablet') {
+      padding-top: 8rem;
+    }
   }
 
   &__container {
@@ -61,6 +65,11 @@
 
   &__download {
     padding: 3rem 0;
+
+    @include media('<=phone') {
+      margin: 0 auto;
+      // padding: .5rem 0;
+    }
   }
 
   &__button {
@@ -69,5 +78,9 @@
     padding: 1rem;
     text-align: center;
     width: 35%;
+
+    @include media('<=phone') {
+      padding: .5rem;
+    }
   }
 }

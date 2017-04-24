@@ -1,10 +1,16 @@
 .header {
 
   &__layer {
+    background-color: white;
     display: flex;
     justify-content: space-around;
     padding: 1rem 1rem;
     border-bottom: 1px solid $grey;
+    position: fixed;
+  	z-index: 10;
+  	right: 0;
+  	left: 0;
+  	top: 0;
 
     @include media('<=tablet') {
       display: flex;
@@ -12,8 +18,9 @@
       justify-content: center;
     }
 
-    @include media('<=phone')
+    @include media('<=phone') {
       padding: .25rem .25rem;
+    }
   }
 
   &__branding {
