@@ -13,7 +13,7 @@
   }
 
   &__container {
-    width: 90vw;
+    width: 75vw;
     margin: 0 auto;
   }
 
@@ -43,8 +43,8 @@
 
     &:nth-of-type(1) {
       .projects__image {
-        background-image: url(../img/busch.jpg);
-        margin-right: 1.55rem;
+        background-image: url(../img/earthdance.jpg);
+        margin-right: 1.5rem;
 
         @include media('<=phone') {
           margin: 0;
@@ -54,8 +54,8 @@
 
     &:nth-of-type(2) {
       .projects__image {
-        background-image: url(../img/tedDrewes.jpg);
-        margin-left: 1.55rem;
+        background-image: url(../img/stlArtWorks.jpg);
+        margin-left: 1.5rem;
 
         @include media('<=phone') {
           margin: 0;
@@ -65,8 +65,8 @@
 
     &:nth-of-type(3) {
       .projects__image {
-        background-image: url(../img/arch.jpg);
-        margin-right: 1.55rem;
+        background-image: url(../img/MJG.jpg);
+        margin-right: 1.5rem;
 
         @include media('<=phone') {
           margin: 0;
@@ -77,7 +77,7 @@
     &:nth-of-type(4) {
       .projects__image {
         background-image: url(../img/cards-game.jpg);
-        margin-left: 1.55rem;
+        margin-left: 1.5rem;
 
         @include media('<=phone') {
           margin: 0;
@@ -110,6 +110,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex: 1;
-    height: 350px;
+    height: 400px;
   }
 }
