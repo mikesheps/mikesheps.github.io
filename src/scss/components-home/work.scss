@@ -23,16 +23,26 @@
     color: $darkgrey;
     margin: 0 auto;
     padding-top: 2rem;
-    width: 80%;
+    width: 70%;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 600px;
     margin: 0 auto;
     padding: 1.5rem 0;
-    width: 80%;
+    width: 70%;
+
+    @include media('<=tablet') {
+      height: 500px;
+      width: 70%;
+    }
+
+    @include media('<=phone') {
+      height: 350px;
+      width: 70%;
+    }
   }
 
   &__browserbar {
@@ -64,13 +74,14 @@
   }
 
   &__project1 {
-    background-image: url(../img/busch.jpg);
+    background-image: url(../img/earthdance.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 19px 57px #000000;
+    box-shadow: 0px 19px 57px $darkgrey;
     display: flex;
-    height: 310px;
+    height: 100%;
+    width: 100%;
   }
 
   &__link {
@@ -79,13 +90,13 @@
   }
 
   &__project2 {
-    background-image: url(../img/tedDrewes.jpg);
+    background-image: url(../img/stlArtWorks.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 19px 57px #000000;
+    box-shadow: 0px 19px 57px $darkgrey;
     display: flex;
-    height: 310px;
+    height: 100%;
 
   }
 }
