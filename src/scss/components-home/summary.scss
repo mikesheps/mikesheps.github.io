@@ -1,0 +1,28 @@
+.summary {
+
+  &__layer {
+    display: flex;
+    background-color: $darkgrey;
+    padding: 3rem;
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    // flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    width: 50%;
+
+    P {
+      color: white;
+    }
+  }
+
+  &__subheading {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 2rem;
+  }
+}
