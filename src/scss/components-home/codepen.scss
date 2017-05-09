@@ -1,6 +1,6 @@
-.fun {
+.codepen {
   &__layer {
-    background-color: $grey;
+    background-color: $red;
     padding: 3rem;
   }
 
@@ -10,18 +10,17 @@
     height: auto;
     margin: 0 auto;
     width: 50%;
+  }
 
-    p {
-      color: white;
-    }
+  &__items {
+    display: flex;
+    flex-direction: column;
   }
 
   &__subheading {
-    color: $white;
-    font-size: 1.5rem;
+    color: #333;
+    font-size: 2.5rem;
     font-weight: 400;
-    margin: 0 auto;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
-
 }
