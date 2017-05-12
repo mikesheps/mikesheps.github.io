@@ -100,8 +100,12 @@
     padding-left: 1rem;
   }
 
-  &__teaser {
+  &__teaser, &__builtWith {
     padding: 0 1rem;
+  }
+
+  &__builtWith {
+    font-weight: 100;
   }
 
   &__image {

@@ -1,6 +1,7 @@
 .work {
 
   &__layer {
+    background-color: darken($red,4%);
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
@@ -20,7 +21,7 @@
   }
 
   &__subheading {
-    color: #333;
+    color: white;
     font-size: 2.5rem;
     font-weight: 400;
     margin: 0 auto;
@@ -80,7 +81,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 19px 57px $darkgrey;
+    box-shadow: 0px 8px 50px lighten($darkgrey, 10%);
     display: flex;
     height: 100%;
     width: 100%;
@@ -96,7 +97,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 19px 57px $darkgrey;
+    box-shadow: 0px 8px 50px lighten($darkgrey, 10%);
     display: flex;
     height: 100%;
 
