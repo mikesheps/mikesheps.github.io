@@ -1,6 +1,6 @@
 .codepen {
   &__layer {
-    background-color: $red;
+    // background-color: $red;
     padding: 3rem;
   }
 
@@ -22,5 +22,9 @@
     font-size: 2.5rem;
     font-weight: 400;
     padding: 1rem;
+  }
+
+  &__pen {
+    padding-bottom: 3rem;
   }
 }
