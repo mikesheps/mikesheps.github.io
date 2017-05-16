@@ -93,10 +93,36 @@ gulp.task('clean', function () {
   ]);
 });
 
+
+
+gulp.task('moveCNAME', function() {
+  return gulp.src('CNAME')
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('moveModernizer', function() {
+  return gulp.src('src/js/vendor/modernizr.js')
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('moveDocs', function() {
+  return gulp.src('src/docs/*')
+    .pipe(gulp.dest('./dist/docs'));
+});
+
+gulp.task('moveSitemap', function() {
+  return gulp.src('src/sitemap.xml')
+    .pipe(gulp.dest('./dist/'));
+});
+
+
+
 // Deploy to github pages
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      branch: 'master'
+    }));
 });
 
 gulp.task('default', ['clean', 'browserSync']);
