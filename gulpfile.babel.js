@@ -118,7 +118,7 @@ gulp.task('moveSitemap', function() {
 
 
 // Deploy to github pages
-gulp.task('deploy', function() {
+gulp.task('deploy', ['moveCNAME', 'moveModernizer', 'moveDocs', 'moveSitemap'], function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages({
       branch: 'master'
