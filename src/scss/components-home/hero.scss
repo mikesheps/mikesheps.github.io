@@ -1,16 +1,16 @@
 .hero {
 
   &__layer {
-  background-image: url(../img/mShep.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
+    background-image: url(../img/mShep.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
 
-  @include media('<=phone') {
-    background-size: scroll;
-  }
+    @include media('<=phone') {
+      background-size: contain;
+    }
   }
 }
