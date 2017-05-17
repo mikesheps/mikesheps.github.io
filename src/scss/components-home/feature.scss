@@ -16,7 +16,7 @@
     width: 100vw;
 
     @include media('<=phone') {
-      background-attachment: scroll;
+      background-size: scroll;
     }
   }
 
