@@ -12,11 +12,13 @@
     flex-direction: column;
     width: 50%;
 
-    @include media('<=tablet')
+    @include media('<=tablet') {
       width: 70%;
+    }
 
     @include media('<=phone') {
-      width: 90%;
+      width: 100%;
+      padding: 1rem;
     }
   }
 
@@ -24,9 +26,16 @@
     color: white;
     font-size: 2.5rem;
     font-weight: 400;
-    margin: 0 auto;
-    padding-top: 2rem;
-    width: 70%;
+    // margin: 0 auto;
+    padding-top: 3rem;
+    // width: 70%;
+
+    @include media('<=phone') {
+      font-size: 2rem;
+      text-align: center;
+      padding-top: 0;
+      width: 100%;
+    }
   }
 
   &__item {
@@ -35,16 +44,16 @@
     height: 600px;
     margin: 0 auto;
     padding: 1.5rem 0;
-    width: 70%;
+    width: 100%;
 
     @include media('<=tablet') {
       height: 500px;
-      width: 70%;
+      // width: 70%;
     }
 
     @include media('<=phone') {
       height: 350px;
-      width: 70%;
+      width: 100%;
     }
   }
 
