@@ -98,6 +98,11 @@
   &__subheading {
     color: $darkgrey;
     padding-left: 1rem;
+
+    @include media('<=phone') {
+      text-align: center;
+      padding: .5rem;
+    }
   }
 
   &__teaser, &__builtWith {
@@ -106,6 +111,10 @@
 
   &__builtWith {
     font-weight: 100;
+
+    @include media('<=phone') {
+      padding-bottom: 2rem;
+    }
   }
 
   &__image {

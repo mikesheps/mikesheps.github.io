@@ -2,7 +2,7 @@
 
   &__layer {
     align-items: center;
-    // background-attachment: fixed;
+    background-attachment: scroll;
     background-blend-mode: multiply;
     background-color: $red;
     background-image: url(../img/cards-game.jpg);
@@ -13,12 +13,7 @@
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    position: relative;
     width: 100vw;
-
-    @include media('<=phone') {
-      background-size: scroll;
-    }
   }
 
   &__banner {

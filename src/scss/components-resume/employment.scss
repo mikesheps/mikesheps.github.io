@@ -14,11 +14,21 @@
     margin: 0 auto;
     padding: 1.5rem 0;
     width: 50%;
+
+    @include media('<=phone') {
+      width: 80%;
+
+    }
   }
 
   &__subheading {
     color: $darkgrey;
     padding: 1rem 0;
+
+    @include media('<=phone') {
+      text-align: center;
+
+    }
   }
 
   &__summary {
@@ -31,6 +41,12 @@
 
   &__list {
     list-style-type: none;
+
+    li {
+      @include media('<=phone') {
+        padding-bottom: .5rem;
+      }
+    }
   }
 
   &__history {
@@ -42,11 +58,19 @@
   &__company {
     font-size: 1rem;
     font-weight: normal;
+
+    @include media('<=phone') {
+      line-height: 2;
+    }
   }
 
   &__period {
     font-size: 1rem;
     font-weight: normal;
+
+    @include media('<=phone') {
+      line-height: 2;
+    }
   }
 
   &__portfolio {
@@ -79,8 +103,14 @@
     text-align: center;
     width: 35%;
 
-    @include media('<=phone') {
+    @include media('<=tablet') {
       padding: .5rem;
+
+    }
+
+    @include media('<=phone') {
+      padding: .25rem;
+
     }
   }
 }

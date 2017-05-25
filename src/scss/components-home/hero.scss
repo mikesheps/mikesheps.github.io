@@ -1,18 +1,12 @@
 .hero {
 
   &__layer {
-    // background-attachment: fixed;
+    background-attachment: scroll;
     background-image: url(../img/mShep.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: relative;
-    // width: 100vw;
-
-
-
-
 
     @include media('<=phone') {
       // height: 100vh;
