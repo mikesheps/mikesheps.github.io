@@ -9,7 +9,7 @@
     height: 100vh;
 
     @include media('<=phone') {
-      // height: 100vh;
+      background-attachment: scroll;
     }
   }
 }
