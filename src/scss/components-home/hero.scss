@@ -1,7 +1,7 @@
 .hero {
 
   &__layer {
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-image: url(../img/mShep.jpg);
     background-position: center center;
     background-repeat: no-repeat;
