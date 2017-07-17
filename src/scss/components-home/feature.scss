@@ -31,6 +31,7 @@
     font-size: 3.5rem;
 
     @include media('<=phone') {
+      display: none;
       line-height: 1;
       padding-top: 4rem;
     }
