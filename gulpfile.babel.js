@@ -125,4 +125,4 @@ gulp.task("deploy", ["moveCNAME", "moveModernizer", "moveDocs", "moveSitemap"], 
     }));
 });
 
-gulp.task("default", ["clean", "browserSync"]);
+gulp.task("default", ["clean", "browserSync", "moveDocs"]);

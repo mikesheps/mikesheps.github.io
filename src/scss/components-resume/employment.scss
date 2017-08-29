@@ -98,10 +98,16 @@
 
   &__button {
     background-color: $red;
+    border-radius: 5px;
     color: $white;
     padding: 1rem;
     text-align: center;
     width: 35%;
+
+    &:hover {
+        background-color: $grey;
+        color: $white;
+    }
 
     @include media('<=tablet') {
       padding: .5rem;
