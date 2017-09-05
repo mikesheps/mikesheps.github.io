@@ -43,7 +43,7 @@
 
     &:nth-of-type(1) {
       .projects__image {
-        background-image: url(../img/earthdance.jpg);
+        background-image: url(../img/stlArtWorks.jpg);
         margin-right: 1.5rem;
 
         @include media('<=phone') {
@@ -54,7 +54,7 @@
 
     &:nth-of-type(2) {
       .projects__image {
-        background-image: url(../img/stlArtWorks.jpg);
+        background-image: url(../img/earthdance.jpg);
         margin-left: 1.5rem;
 
         @include media('<=phone') {
@@ -87,6 +87,10 @@
 
   }
 
+  &__link {
+    height: 100%;
+    width: 100%;
+  }
 
   &__summary {
     display: flex;
